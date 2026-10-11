@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Local data / database
+*.db
+*.sqlite
+*.sqlite3
+
+# IDE/OS & Windows wrappers
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+python.cmd
+uvicorn.cmd
+
+# Build, tests & distribution archives
+.tmp/
+*.zip
+.agents/
+
+# Generated model artifacts unless intentionally tracked
+*.joblib
+*.pkl
+*.pt
+*.pth
+*.onnx

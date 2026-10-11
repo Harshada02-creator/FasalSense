@@ -1,0 +1,483 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6e2731">
+  <title>FasalSense | Chharoli Farming Intelligence & Local Market Balance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+
+  <!-- ---------------- Top Navigation Bar ---------------- -->
+  <header class="topbar">
+    <span class="brand-mark">✳</span>
+    <span class="brand">FasalSense</span>
+    <span class="area-pill">⌖ Chharoli Budruk · Pune, Maharashtra</span>
+    <span class="top-spacer"></span>
+    <nav class="nav-links">
+      <button class="text-btn" onclick="showPage('home')">Home</button>
+      <button class="text-btn" onclick="showPage('analyzer')">Crop Analyzer</button>
+      <button class="text-btn" onclick="showPage('scenarios')">Scenarios Lab</button>
+      <button class="text-btn" onclick="showPage('community')">Supply &amp; Demand</button>
+      <button class="text-btn" onclick="showPage('market')">Marketplace</button>
+      <button id="nav-login-btn" class="btn btn-outline" onclick="showPage('login')">Log in</button>
+      <button id="nav-register-btn" class="btn btn-primary" onclick="showPage('register')">Join Community</button>
+      <button id="nav-dash-btn" class="btn btn-primary" style="display:none" onclick="showPage('dashboard')">Workspace →</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ---------------- HOME PAGE ---------------- -->
+    <section id="page-home" class="page active">
+      <div class="hero">
+        <div class="hero-copy">
+          <div class="eyebrow"><span class="dot"></span> LOCAL FARMING INTELLIGENCE · CHHAROLI BUDRUK</div>
+          <h1>Grow with the<br><em>wisdom of your land.</em></h1>
+          <p class="hero-text">A multi-factor decision-support prototype for Chharoli Budruk, Pune. Compare candidate crops using farm affordability, water constraints, soil chemistry, and <b>local crop supply vs retailer demand</b> balance.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary btn-lg" onclick="showPage('analyzer')">Explore Crop Analyzer <span>↗</span></button>
+            <button class="btn btn-outline btn-lg" onclick="showPage('scenarios')">Test 7 Scenarios Lab →</button>
+          </div>
+          <div class="hero-proof">
+            <div class="avatar-stack"><span>शे</span><span>🌾</span><span>✳</span></div>
+            <span>Designed for <b>Chharoli Budruk, Pune</b> · Academic Diploma Project</span>
+          </div>
+        </div>
+        <div class="hero-art">
+          <div class="sun"></div>
+          <div class="field field-back"></div>
+          <div class="field field-mid"></div>
+          <div class="field field-front"></div>
+          <div class="art-label">
+            <span class="tiny-icon">⌁</span>
+            <div>
+              <b>Market Balance Core</b>
+              <small>Crop Availability vs Buyer Requests</small>
+            </div>
+          </div>
+          <div class="folk-stamp">शेती<br><small>FASAL</small></div>
+        </div>
+      </div>
+
+      <div class="notice">
+        <span>✳</span>
+        <div>
+          <b>Academic Diploma Project Notice — Chharoli Budruk, Pune</b>
+          <p>Weather is queried live from Open-Meteo. Wholesale benchmark prices reflect historical Pune APMC / Haveli bulletins (MSAMB). Local supply/demand demonstration quantities are synthetic for presentation unless confirmed by active FasalSense app listings. Do not treat demonstration estimates as guaranteed profits.</p>
+        </div>
+      </div>
+
+      <!-- Quick Interactive Scenario Demonstration Bar -->
+      <section class="section" style="padding-top:10px; padding-bottom:30px;">
+        <div class="scenario-bar">
+          <div class="scenario-bar-head">
+            <div class="scenario-bar-title">
+              🧪 <b>Teacher Demonstration Laboratory</b>
+              <span>7 Interactive Scenarios</span>
+            </div>
+            <button class="btn btn-outline btn-sm" onclick="showPage('scenarios')">View All Scenarios ↗</button>
+          </div>
+          <div class="scenario-chips" id="home-scenario-chips">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Community Statistics -->
+      <section class="section">
+        <div class="section-heading">
+          <div>
+            <div class="eyebrow">A COMMUNITY THAT LEARNS TOGETHER</div>
+            <h2>One village. Shared insight.</h2>
+          </div>
+          <button class="btn btn-outline" onclick="showPage('community')">View Full Supply/Demand ↗</button>
+        </div>
+        <div class="stats-grid" id="community-stats">
+          <div class="stat-card"><span>Registered Farmers</span><b>—</b><small>Prototype accounts in Chharoli</small></div>
+          <div class="stat-card"><span>Farms Profiled</span><b>—</b><small>With soil &amp; water inputs</small></div>
+          <div class="stat-card"><span>Active Produce Listings</span><b>—</b><small>Current harvest offers</small></div>
+          <div class="stat-card"><span>Crop Types Reported</span><b>—</b><small>Community profile data</small></div>
+        </div>
+      </section>
+
+      <!-- Key Features -->
+      <section class="section split-section">
+        <div>
+          <div class="eyebrow">A LITTLE MORE CONTEXT, BEFORE A BIG DECISION</div>
+          <h2>Decisions rooted in<br>your fields &amp; market.</h2>
+          <p class="muted">FasalSense does not simply recommend the crop with the highest market price. It balances agricultural constraints (season, soil, pH, water) with economic affordability and <b>local crop supply vs retailer demand</b> to prevent market glut risks.</p>
+          <div style="margin-top:24px; display:flex; gap:12px;">
+            <button class="btn btn-primary" onclick="showPage('analyzer')">Launch Crop Analyzer ↗</button>
+            <button class="btn btn-outline" onclick="showPage('market')">Browse Marketplace →</button>
+          </div>
+        </div>
+        <div class="feature-list">
+          <div class="feature">
+            <span class="feature-icon clay">⚖</span>
+            <div>
+              <b>Crop Supply vs Retailer Demand</b>
+              <p>Identify whether crops carry local surplus competition or present an unmet market gap.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon green">☼</span>
+            <div>
+              <b>Weather &amp; Water Constraints</b>
+              <p>Penalizes high-water crops during rain-fed conditions; accounts for Chharoli weather forecast.</p>
+            </div>
+          </div>
+          <div class="feature">
+            <span class="feature-icon rose">♧</span>
+            <div>
+              <b>Soil Chemistry &amp; Lab pH Input</b>
+              <p>Evaluates soil texture &amp; measured pH ranges; includes honest soil photo inspection limits.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <!-- ---------------- SCENARIOS LAB PAGE ---------------- -->
+    <section id="page-scenarios" class="page">
+      <div class="page-container">
+        <div class="eyebrow">TEACHER DEMONSTRATION WORKSPACE</div>
+        <h1 class="page-title">Interactive Scenarios Laboratory.</h1>
+        <p class="lead">Demonstrate how FasalSense recalculates rankings when budget, water, soil pH, season, or market supply/demand shift. Select any scenario below to immediately load inputs and inspect ranking changes.</p>
+
+        <div class="scenario-bar" style="margin-top:25px;">
+          <div class="scenario-bar-title" style="margin-bottom:12px;">
+            <b>Select a Pre-Configured Test Situation:</b>
+          </div>
+          <div class="scenario-chips" id="lab-scenario-chips">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+
+        <div id="active-scenario-detail"></div>
+
+        <div style="display:flex; justify-content:space-between; align-items:center; margin-top:30px;">
+          <h2 style="font-size:24px; margin:0;">Scenario Ranking Output</h2>
+          <button class="btn btn-outline" onclick="openCompareModal()">⇄ Compare Two Scenarios Side-by-Side</button>
+        </div>
+
+        <div id="scenario-analysis-results" style="margin-top:20px;">
+          <p class="muted">Click any scenario above to view instant calculation results.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------- CROP ANALYZER PAGE ---------------- -->
+    <section id="page-analyzer" class="page">
+      <div class="page-container">
+        <div class="eyebrow">TRANSPARENT, FARM-SPECIFIC DECISION SUPPORT</div>
+        <h1 class="page-title">Multi-Factor Crop Analyzer.</h1>
+        <p class="lead">Evaluate candidate crops for Chharoli Budruk. The engine calculates an explainable 5-factor suitability score (Season 25, Water 20, Soil/pH 20, Budget 20, Market 15) and estimates cultivation economics.</p>
+
+        <!-- Quick Scenario Switcher Strip inside Analyzer -->
+        <div class="scenario-bar">
+          <div class="scenario-bar-head">
+            <div class="scenario-bar-title">⚡ <b>Quick Scenarios Preset Bar:</b></div>
+            <small class="muted">Loads farm conditions and recalculates</small>
+          </div>
+          <div class="scenario-chips" id="analyzer-scenario-chips">
+            <!-- Populated dynamically via JS -->
+          </div>
+        </div>
+
+        <div id="analyzer-container"></div>
+      </div>
+    </section>
+
+    <!-- ---------------- COMMUNITY & SUPPLY/DEMAND PAGE ---------------- -->
+    <section id="page-community" class="page">
+      <div class="page-container">
+        <div class="eyebrow">LOCAL MARKET ANALYSIS &amp; TRANSPARENCY</div>
+        <h1 class="page-title">Crop Supply vs Retailer Demand.</h1>
+        <p class="lead">The core innovation of FasalSense: comparing available local supply against recorded retailer demand to detect market competition or potential buyer gaps.</p>
+
+        <div class="notice" style="margin:20px 0;">
+          <span>ⓘ</span>
+          <div>
+            <b>Data Provenance &amp; Policy:</b>
+            <p>FasalSense active listings and retailer inquiries provide dynamic platform proxy data. When platform counts are limited, synthetic simulation figures are provided for academic evaluation. Neither represents a census of the entire village. Pune APMC benchmark prices are historical wholesale references (MSAMB).</p>
+          </div>
+        </div>
+
+        <div class="panel">
+          <div class="panel-head">
+            <div>
+              <h3>Crop Availability vs Buyer Requests (30-Day Snapshot)</h3>
+              <p class="muted">Ratios &lt; 0.75 signal possible supply gaps; &gt; 1.25 signal potential surplus.</p>
+            </div>
+            <div style="display:flex; gap:10px; align-items:center;">
+              <label style="font-size:11px; font-weight:700; color:var(--brown);">
+                Data Mode:
+                <select id="market-mode-select" onchange="loadMarketBalance()" style="width:auto; padding:6px 10px; margin-left:6px;">
+                  <option value="hybrid" selected>Hybrid (Demo Simulation Fallback)</option>
+                  <option value="platform_only">Platform-Only (FasalSense App Records)</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div id="market-balance-table" class="table-wrap">Loading market balance…</div>
+        </div>
+
+        <!-- Pune APMC Mandi Benchmarks -->
+        <div class="panel" style="margin-top:25px;">
+          <div class="panel-head">
+            <div>
+              <h3>Pune District Mandi Wholesale Benchmarks</h3>
+              <p class="muted">Source: MSAMB &amp; AGMARKNET Pune / Haveli / Junnar APMC monthly price records (2022–2024).</p>
+            </div>
+            <span class="status-badge">Historical APMC Data</span>
+          </div>
+          <div id="apmc-benchmarks-table" class="table-wrap">Loading APMC benchmarks…</div>
+        </div>
+
+        <div class="panel" style="margin-top:25px;">
+          <div class="panel-head">
+            <div>
+              <h3>What are registered farmers growing?</h3>
+              <p class="muted">Self-reported by registered users during farm profiling.</p>
+            </div>
+            <span class="status-badge">App Data</span>
+          </div>
+          <div id="crop-community" class="crop-bars"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------- MARKETPLACE PAGE ---------------- -->
+    <section id="page-market" class="page">
+      <div class="page-container">
+        <div class="eyebrow">LOCAL PRODUCE, DIRECT CONNECTIONS</div>
+        <h1 class="page-title">Chharoli Harvest Marketplace.</h1>
+        <p class="lead">Browse produce listed by registered farmers in the Chharoli area. Retailers can submit purchase inquiries with specified quantities and messages.</p>
+
+        <div class="market-tools">
+          <input id="market-search" placeholder="Search crop or variety name…" oninput="loadListings()">
+          <label>Max Price (₹/kg) <input id="market-max" type="number" min="0" placeholder="Any" oninput="loadListings()"></label>
+          <button id="post-listing-btn" class="btn btn-primary" style="display:none;" onclick="showListingFormModal()">+ List Produce</button>
+        </div>
+
+        <div id="listing-grid" class="listing-grid"><p class="muted">Loading listings…</p></div>
+      </div>
+    </section>
+
+    <!-- ---------------- USER DASHBOARD WORKSPACE ---------------- -->
+    <section id="page-dashboard" class="page">
+      <div class="dash-layout">
+        <aside class="sidebar">
+          <div class="side-user">
+            <div class="user-avatar" id="user-avatar">U</div>
+            <div>
+              <b id="side-name">Your Account</b>
+              <small id="side-role">Farmer</small>
+            </div>
+          </div>
+          <div class="side-label">WORKSPACE</div>
+          <button class="side-link active" data-view="overview" onclick="dashView('overview')">◫ &nbsp; Overview</button>
+          <button class="side-link" id="side-farm-btn" data-view="farm" onclick="dashView('farm')">♧ &nbsp; My Farm Profile</button>
+          <button class="side-link" id="side-analyzer-btn" data-view="analyzer" onclick="dashView('analyzer')">✳ &nbsp; Crop Analyzer</button>
+          <button class="side-link" data-view="scenarios" onclick="dashView('scenarios')">🧪 &nbsp; Scenarios Lab</button>
+          <button class="side-link" data-view="community" onclick="dashView('community')">⚖ &nbsp; Supply &amp; Demand</button>
+          <button class="side-link" data-view="market" onclick="dashView('market')">🧺 &nbsp; Marketplace</button>
+          <button class="side-link" id="side-listings-btn" data-view="listings" onclick="dashView('listings')">▤ &nbsp; My Produce Listings</button>
+          <button class="side-link" data-view="inquiries" onclick="dashView('inquiries')">✉ &nbsp; Inquiries <span id="inquiry-count-badge" style="font-size:10px; background:var(--terra); color:#fff; padding:2px 6px; border-radius:10px; display:none;">0</span></button>
+          <button class="side-link" id="side-history-btn" data-view="history" onclick="dashView('history')">📜 &nbsp; Analysis History</button>
+          <div class="side-bottom">
+            <div class="local-tag">⌖ Chharoli Budruk<br><small>Pune, Maharashtra</small></div>
+            <button class="side-link" onclick="logout()">↪ &nbsp; Log out</button>
+          </div>
+        </aside>
+
+        <div class="dash-main">
+          <div class="dash-top">
+            <div>
+              <div class="eyebrow">YOUR AGRICULTURE WORKSPACE</div>
+              <h1 id="dash-title">Namaste</h1>
+              <p id="dash-subtitle" class="muted">A clearer view of your farm and local market.</p>
+            </div>
+            <span class="live-chip"><i></i> Chharoli Budruk</span>
+          </div>
+          <div id="dash-content"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ---------------- LOGIN PAGE ---------------- -->
+    <section id="page-login" class="page">
+      <div class="auth-wrap">
+        <div class="auth-art">
+          <span class="brand-mark">✳</span>
+          <h2>Good decisions<br>start with good soil.</h2>
+          <p>Your Chharoli farming workspace: evaluate candidate crops, balance supply and demand, and connect harvests directly with nearby buyers.</p>
+        </div>
+        <form class="auth-card" id="login-form">
+          <div class="eyebrow">WELCOME BACK</div>
+          <h2>Log in to FasalSense</h2>
+          <p class="muted">Continue to your farmer or retailer workspace.</p>
+          <label>Email address
+            <input type="email" name="email" required placeholder="you@example.com">
+          </label>
+          <label>Password
+            <input type="password" name="password" required placeholder="At least 8 characters">
+          </label>
+          <button class="btn btn-primary full" type="submit">Log in →</button>
+          <div id="login-msg" class="form-msg"></div>
+          <p class="auth-switch">New to FasalSense? <a onclick="showPage('register')">Create an account</a></p>
+          <div class="demo-box">
+            <b>Demo Credentials for Evaluation:</b>
+            <p>👨‍🌾 <b>Farmer:</b> farmer.demo@example.com / DemoFarm123!</p>
+            <p>🧺 <b>Retailer:</b> retailer.demo@example.com / DemoRetail123!</p>
+            <div style="margin-top:8px; display:flex; gap:6px;">
+              <button type="button" class="btn btn-outline btn-sm" onclick="fillDemoLogin('farmer')">Fill Farmer</button>
+              <button type="button" class="btn btn-outline btn-sm" onclick="fillDemoLogin('retailer')">Fill Retailer</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- ---------------- REGISTER PAGE ---------------- -->
+    <section id="page-register" class="page">
+      <div class="form-shell">
+        <div class="eyebrow">JOIN YOUR LOCAL COMMUNITY</div>
+        <h1 class="page-title">Let's get to know you.</h1>
+        <p class="lead">Join FasalSense as a Farmer to plan crops and list produce, or as a Retailer to discover harvests and contact farmers in Chharoli.</p>
+        <form id="register-form" class="form-card">
+          <div class="role-select">
+            <label class="role-option">
+              <input type="radio" name="role" value="farmer" checked>
+              <span class="role-emoji">🌱</span>
+              <b>I am a Farmer</b>
+              <small>Plan crops, run analysis &amp; publish produce listings</small>
+            </label>
+            <label class="role-option">
+              <input type="radio" name="role" value="retailer">
+              <span class="role-emoji">🧺</span>
+              <b>I am a Retailer / Buyer</b>
+              <small>Browse produce, evaluate prices &amp; send inquiries</small>
+            </label>
+          </div>
+          <div class="form-grid">
+            <label>Full name
+              <input name="name" required minlength="2" placeholder="e.g. Ramesh Patil">
+            </label>
+            <label>Email address
+              <input type="email" name="email" required placeholder="you@example.com">
+            </label>
+            <label>Password
+              <input type="password" name="password" required minlength="8" placeholder="Minimum 8 characters">
+            </label>
+            <label>Locality
+              <input value="Chharoli Budruk, Pune, Maharashtra" disabled>
+              <small>Area is fixed for this prototype demonstration.</small>
+            </label>
+          </div>
+          <button class="btn btn-primary full" type="submit">Create Account →</button>
+          <div id="register-msg" class="form-msg"></div>
+          <p class="auth-switch">Already registered? <a onclick="showPage('login')">Log in</a></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ---------------- Modals ---------------- -->
+
+  <!-- Modal: Purchase Inquiry -->
+  <div id="inquiry-modal" class="modal-backdrop">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeInquiryModal()">✕</button>
+      <div class="eyebrow">SUBMIT PURCHASE INQUIRY</div>
+      <h3 id="modal-listing-title" style="font-size:22px; margin:6px 0 14px; color:var(--maroon-dark);">Crop Name</h3>
+      <p id="modal-listing-meta" class="muted" style="margin-bottom:16px;">Farmer details</p>
+      <form id="inquiry-modal-form">
+        <input type="hidden" id="modal-listing-id" name="listing_id">
+        <label>Quantity to Inquire (kg)
+          <input type="number" id="modal-quantity" name="quantity_kg" min="1" step="1" required>
+          <small id="modal-quantity-help" class="muted">Max available: 0 kg</small>
+        </label>
+        <div style="background:#f5ecdf; padding:12px; border-radius:8px; margin:14px 0;" id="modal-price-calc">
+          Estimated Value: <b>₹0</b>
+        </div>
+        <label>Message for the Farmer
+          <textarea id="modal-message" name="message" rows="3" placeholder="Specify preferred pickup/delivery schedule, packaging, or questions..."></textarea>
+        </label>
+        <button type="submit" class="btn btn-primary full">Send Inquiry to Farmer →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Modal: Side-by-Side Scenario Comparison -->
+  <div id="compare-modal" class="modal-backdrop">
+    <div class="modal-card" style="max-width:900px;">
+      <button class="modal-close" onclick="closeCompareModal()">✕</button>
+      <div class="eyebrow">SIDE-BY-SIDE EVALUATION</div>
+      <h3 style="font-size:24px; margin:6px 0 16px; color:var(--maroon-dark);">Compare Two Scenarios</h3>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:16px; margin-bottom:18px;">
+        <label><b>Scenario A (Baseline):</b>
+          <select id="compare-select-a" onchange="runSideBySideComparison()"></select>
+        </label>
+        <label><b>Scenario B (Alternative):</b>
+          <select id="compare-select-b" onchange="runSideBySideComparison()"></select>
+        </label>
+      </div>
+      <div id="compare-results-wrap" class="table-wrap">
+        <p class="muted">Loading comparison data…</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal: Publish Produce Listing -->
+  <div id="listing-modal" class="modal-backdrop">
+    <div class="modal-card">
+      <button class="modal-close" onclick="closeListingModal()">✕</button>
+      <div class="eyebrow">FARMER PRODUCE MARKETPLACE</div>
+      <h3 style="font-size:22px; margin:6px 0 16px; color:var(--maroon-dark);">Publish Harvest Listing</h3>
+      <form id="listing-modal-form" class="form-two">
+        <label>Crop Name
+          <input name="crop_name" required placeholder="e.g. Pearl millet (Bajra)">
+        </label>
+        <label>Variety (optional)
+          <input name="variety" placeholder="e.g. Shanti Hybrid">
+        </label>
+        <label>Quantity Available (kg)
+          <input name="quantity_kg" type="number" min="1" step="1" required placeholder="e.g. 500">
+        </label>
+        <label>Asking Price (₹/kg)
+          <input name="price_per_kg" type="number" min="0.1" step="0.1" required placeholder="e.g. 26.5">
+        </label>
+        <label>Availability Date
+          <input name="available_date" placeholder="e.g. Ready for pickup / Next week">
+        </label>
+        <label>Quality Grade
+          <input name="quality" placeholder="e.g. Grade A sun-dried grain">
+        </label>
+        <label style="grid-column:1/-1;">Description &amp; Farm Location Note
+          <textarea name="description" rows="2" placeholder="Describe quality, drying method, or pickup location in Chharoli..."></textarea>
+        </label>
+        <button class="btn btn-primary full" style="grid-column:1/-1;" type="submit">Publish Produce Listing →</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-brand">
+      <span class="brand-mark">✳</span>
+      <b>FasalSense</b>
+    </div>
+    <span>Academic Diploma Prototype for Chharoli Budruk, Pune, Maharashtra.</span>
+    <span>Weather: <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a> · Benchmarks: MSAMB &amp; AGMARKNET Pune · Illustrative data clearly labeled.</span>
+  </footer>
+
+  <div id="toast" class="toast"></div>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

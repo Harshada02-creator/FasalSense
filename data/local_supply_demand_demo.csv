@@ -1,0 +1,17 @@
+crop_name,period_days,supply_kg,demand_kg,evidence_status,notes
+Rice (Paddy),30,7400,6200,illustrative-demo,Simulated example only; not measured in Chharoli
+Pearl millet (Bajra),30,1300,1800,illustrative-demo,Simulated example only; not measured in Chharoli
+Sorghum (Jowar),30,3000,2000,illustrative-demo,Simulated example only; not measured in Chharoli
+Pigeon pea (Tur/Arhar),30,1800,2600,illustrative-demo,Simulated example only; not measured in Chharoli
+Green gram (Moong),30,900,1500,illustrative-demo,Simulated example only; not measured in Chharoli
+Chickpea (Harbhara),30,3200,2900,illustrative-demo,Simulated example only; not measured in Chharoli
+Wheat,30,2800,2600,illustrative-demo,Simulated example only; not measured in Chharoli
+Maize,30,4600,3000,illustrative-demo,Simulated example only; not measured in Chharoli
+Soybean,30,5000,3300,illustrative-demo,Simulated example only; not measured in Chharoli
+Groundnut,30,1200,1700,illustrative-demo,Simulated example only; not measured in Chharoli
+Onion,30,8500,5000,illustrative-demo,Simulated example only; not measured in Chharoli
+Tomato,30,9000,12000,illustrative-demo,Simulated example only; not measured in Chharoli
+Potato,30,5200,4800,illustrative-demo,Simulated example only; not measured in Chharoli
+Cotton,30,900,1400,illustrative-demo,Simulated example only; not measured in Chharoli
+Sugarcane,30,7600,7200,illustrative-demo,Simulated example only; not measured in Chharoli
+Leafy vegetables (mixed),30,1200,3000,illustrative-demo,Simulated example only; not measured in Chharoli

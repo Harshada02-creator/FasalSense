@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: fasalsense-chharoli
+    runtime: python
+    plan: free
+    autoDeployTrigger: off
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app.main:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.12.8
+      - key: DATABASE_URL
+        sync: false
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DEMO_MODE
+        value: "true"
+

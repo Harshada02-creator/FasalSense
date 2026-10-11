@@ -1,0 +1,9 @@
+crop_name,category,source_context,evidence_scope,local_status,recommendation
+Ragi (Nachni),Cereal,NABARD Pune District PLP 2022-23 scale-of-finance list (FY 2021-22),Pune district-level reference,Needs Chharoli-specific validation,Review as an additional candidate; don't claim common in Chharoli
+Sesame (Til),Oilseed,NABARD Pune District PLP 2022-23 scale-of-finance list (FY 2021-22),Pune district-level reference,Needs Chharoli-specific validation,Review season and agronomic requirements before adding
+Sunflower,Oilseed,NABARD Pune District PLP 2022-23 scale-of-finance list (FY 2021-22),Pune district-level reference,Needs Chharoli-specific validation,Review season and market evidence before adding
+Black gram (Urad),Pulse,NABARD Pune District PLP 2022-23 scale-of-finance list (FY 2021-22),Pune district-level reference,Needs Chharoli-specific validation,Review crop calendar and local suitability before adding
+Fodder crop (Gajraj),Fodder,NABARD Pune District PLP 2022-23 scale-of-finance list (FY 2021-22),Pune district-level reference,Needs Chharoli-specific validation,Decide if fodder crops belong in the initial farmer decision flow
+Guava,Fruit / horticulture,NABARD Pune District PLP 2022-23 scale-of-finance list (FY 2021-22),Pune district-level reference,Needs Chharoli-specific validation,Long-duration horticulture option; model establishment costs and time horizon
+Fig (Anjeer),Fruit / horticulture,NABARD Pune District PLP 2022-23 scale-of-finance list (FY 2021-22),Pune district-level reference,Needs Chharoli-specific validation,Long-duration horticulture option; confirm local cultivation evidence and costs
+Vegetables (category),Vegetable,NABARD Pune District PLP 2022-23 scale-of-finance list (FY 2021-22),Pune district-level reference,Needs Chharoli-specific validation,Replace broad category with named crops only when supported; local historical reports may justify further research

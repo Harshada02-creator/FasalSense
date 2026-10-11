@@ -1,0 +1,534 @@
+[
+  {
+    "name": "Rice (Paddy)",
+    "category": "Cereal",
+    "season": [
+      "Kharif"
+    ],
+    "soil": [
+      "Clay loam",
+      "Loamy",
+      "Black soil",
+      "Unknown"
+    ],
+    "water": "High",
+    "ph_min": 5.5,
+    "ph_max": 7.0,
+    "days": 125,
+    "cost_acre": 26000,
+    "cost_breakdown": {
+      "seeds": 2500,
+      "fertilizer": 6500,
+      "irrigation_power": 5000,
+      "labour_transplant_harvest": 9500,
+      "crop_protection": 2500
+    },
+    "yield_q_acre": 20.0,
+    "price_q": 2300,
+    "demand": "Variable — verify latest mandi rates",
+    "note": "Consider only with suitable season, reliable water, drainage and local suitability.",
+    "market_trend": "Illustrative demo signal — verify current mandi prices",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Pearl millet (Bajra)",
+    "category": "Millet / Cereal",
+    "season": [
+      "Kharif"
+    ],
+    "soil": [
+      "Sandy loam",
+      "Loamy",
+      "Black soil",
+      "Unknown"
+    ],
+    "water": "Low",
+    "ph_min": 6.5,
+    "ph_max": 8.2,
+    "days": 85,
+    "cost_acre": 12500,
+    "cost_breakdown": {
+      "seeds": 1200,
+      "fertilizer": 3300,
+      "irrigation_power": 1000,
+      "labour_transplant_harvest": 5200,
+      "crop_protection": 1800
+    },
+    "yield_q_acre": 4.5,
+    "price_q": 2400,
+    "demand": "Variable",
+    "note": "Drought-tolerant cereal candidate; check local variety and sowing window.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Sorghum (Jowar)",
+    "category": "Cereal",
+    "season": [
+      "Kharif",
+      "Rabi"
+    ],
+    "soil": [
+      "Black soil",
+      "Loamy",
+      "Clay loam",
+      "Unknown"
+    ],
+    "water": "Low to moderate",
+    "ph_min": 6.0,
+    "ph_max": 8.0,
+    "days": 105,
+    "cost_acre": 13500,
+    "cost_breakdown": {
+      "seeds": 1300,
+      "fertilizer": 3500,
+      "irrigation_power": 1200,
+      "labour_transplant_harvest": 5700,
+      "crop_protection": 1800
+    },
+    "yield_q_acre": 5.0,
+    "price_q": 3200,
+    "demand": "Variable",
+    "note": "Can suit drier conditions; season and grain/fodder market matter.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Pigeon pea (Tur/Arhar)",
+    "category": "Pulse",
+    "season": [
+      "Kharif"
+    ],
+    "soil": [
+      "Loamy",
+      "Clay loam",
+      "Black soil",
+      "Unknown"
+    ],
+    "water": "Low to moderate",
+    "ph_min": 6.5,
+    "ph_max": 7.8,
+    "days": 160,
+    "cost_acre": 16500,
+    "cost_breakdown": {
+      "seeds": 1600,
+      "fertilizer": 3800,
+      "irrigation_power": 1500,
+      "labour_transplant_harvest": 6800,
+      "crop_protection": 2800
+    },
+    "yield_q_acre": 3.2,
+    "price_q": 7200,
+    "demand": "Moderate",
+    "note": "Longer-duration pulse; needs suitable season and good drainage.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Green gram (Moong)",
+    "category": "Pulse",
+    "season": [
+      "Kharif",
+      "Summer"
+    ],
+    "soil": [
+      "Sandy loam",
+      "Loamy",
+      "Unknown"
+    ],
+    "water": "Low to moderate",
+    "ph_min": 6.2,
+    "ph_max": 7.6,
+    "days": 65,
+    "cost_acre": 11000,
+    "cost_breakdown": {
+      "seeds": 1400,
+      "fertilizer": 2600,
+      "irrigation_power": 1200,
+      "labour_transplant_harvest": 4200,
+      "crop_protection": 1600
+    },
+    "yield_q_acre": 2.4,
+    "price_q": 7600,
+    "demand": "Variable",
+    "note": "Short-duration pulse; local variety, heat and sowing timing matter.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Chickpea (Harbhara)",
+    "category": "Pulse",
+    "season": [
+      "Rabi"
+    ],
+    "soil": [
+      "Black soil",
+      "Loamy",
+      "Clay loam",
+      "Unknown"
+    ],
+    "water": "Low to moderate",
+    "ph_min": 6.0,
+    "ph_max": 8.0,
+    "days": 110,
+    "cost_acre": 14500,
+    "cost_breakdown": {
+      "seeds": 2000,
+      "fertilizer": 3200,
+      "irrigation_power": 1500,
+      "labour_transplant_harvest": 5800,
+      "crop_protection": 2000
+    },
+    "yield_q_acre": 3.5,
+    "price_q": 5600,
+    "demand": "Variable",
+    "note": "Rabi pulse; residual soil moisture and temperature are important.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Wheat",
+    "category": "Cereal",
+    "season": [
+      "Rabi"
+    ],
+    "soil": [
+      "Loamy",
+      "Clay loam",
+      "Black soil",
+      "Unknown"
+    ],
+    "water": "Moderate",
+    "ph_min": 6.0,
+    "ph_max": 7.8,
+    "days": 120,
+    "cost_acre": 19000,
+    "cost_breakdown": {
+      "seeds": 2200,
+      "fertilizer": 5200,
+      "irrigation_power": 3800,
+      "labour_transplant_harvest": 5800,
+      "crop_protection": 2000
+    },
+    "yield_q_acre": 8.0,
+    "price_q": 2500,
+    "demand": "Variable",
+    "note": "Needs a suitable cool-season window and planned irrigation.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Maize",
+    "category": "Cereal",
+    "season": [
+      "Kharif",
+      "Rabi"
+    ],
+    "soil": [
+      "Loamy",
+      "Clay loam",
+      "Unknown"
+    ],
+    "water": "Moderate",
+    "ph_min": 6.0,
+    "ph_max": 7.5,
+    "days": 100,
+    "cost_acre": 18500,
+    "cost_breakdown": {
+      "seeds": 2400,
+      "fertilizer": 5400,
+      "irrigation_power": 3200,
+      "labour_transplant_harvest": 5500,
+      "crop_protection": 2000
+    },
+    "yield_q_acre": 6.0,
+    "price_q": 2200,
+    "demand": "Variable",
+    "note": "Moisture is especially important around flowering; verify buyer demand.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Soybean",
+    "category": "Oilseed / Legume",
+    "season": [
+      "Kharif"
+    ],
+    "soil": [
+      "Black soil",
+      "Loamy",
+      "Clay loam",
+      "Unknown"
+    ],
+    "water": "Moderate",
+    "ph_min": 6.0,
+    "ph_max": 7.5,
+    "days": 100,
+    "cost_acre": 17500,
+    "cost_breakdown": {
+      "seeds": 2800,
+      "fertilizer": 4200,
+      "irrigation_power": 1800,
+      "labour_transplant_harvest": 6200,
+      "crop_protection": 2500
+    },
+    "yield_q_acre": 5.0,
+    "price_q": 4600,
+    "demand": "Variable",
+    "note": "Common regional crop candidate; waterlogging and disease risk need attention.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Groundnut",
+    "category": "Oilseed",
+    "season": [
+      "Kharif",
+      "Summer"
+    ],
+    "soil": [
+      "Sandy loam",
+      "Loamy",
+      "Unknown"
+    ],
+    "water": "Moderate",
+    "ph_min": 6.0,
+    "ph_max": 7.2,
+    "days": 115,
+    "cost_acre": 22000,
+    "cost_breakdown": {
+      "seeds": 4500,
+      "fertilizer": 4500,
+      "irrigation_power": 3200,
+      "labour_transplant_harvest": 7200,
+      "crop_protection": 2600
+    },
+    "yield_q_acre": 5.0,
+    "price_q": 6000,
+    "demand": "Variable",
+    "note": "Needs suitable loose soil and moisture management; avoid waterlogging.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Onion",
+    "category": "Vegetable / Cash",
+    "season": [
+      "Rabi"
+    ],
+    "soil": [
+      "Sandy loam",
+      "Loamy",
+      "Unknown"
+    ],
+    "water": "Moderate",
+    "ph_min": 6.2,
+    "ph_max": 7.5,
+    "days": 120,
+    "cost_acre": 38000,
+    "cost_breakdown": {
+      "seeds": 5500,
+      "fertilizer": 7500,
+      "irrigation_power": 6200,
+      "labour_transplant_harvest": 13800,
+      "crop_protection": 5000
+    },
+    "yield_q_acre": 65.0,
+    "price_q": 1800,
+    "demand": "Highly variable",
+    "note": "Higher input and price risk; storage, disease and market timing matter.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Tomato",
+    "category": "Vegetable / Perishable",
+    "season": [
+      "Kharif",
+      "Rabi",
+      "Summer"
+    ],
+    "soil": [
+      "Sandy loam",
+      "Loamy",
+      "Unknown"
+    ],
+    "water": "Moderate",
+    "ph_min": 6.0,
+    "ph_max": 7.0,
+    "days": 100,
+    "cost_acre": 45000,
+    "cost_breakdown": {
+      "seeds": 6000,
+      "fertilizer": 9500,
+      "irrigation_power": 6500,
+      "labour_transplant_harvest": 16500,
+      "crop_protection": 6500
+    },
+    "yield_q_acre": 100.0,
+    "price_q": 1200,
+    "demand": "Highly variable",
+    "note": "Potentially high returns but substantial price, pest, labour and perishability risk.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Potato",
+    "category": "Vegetable / Tuber",
+    "season": [
+      "Rabi"
+    ],
+    "soil": [
+      "Sandy loam",
+      "Loamy",
+      "Unknown"
+    ],
+    "water": "Moderate",
+    "ph_min": 5.2,
+    "ph_max": 6.8,
+    "days": 100,
+    "cost_acre": 42000,
+    "cost_breakdown": {
+      "seeds": 14000,
+      "fertilizer": 8200,
+      "irrigation_power": 4800,
+      "labour_transplant_harvest": 11000,
+      "crop_protection": 4000
+    },
+    "yield_q_acre": 80.0,
+    "price_q": 1400,
+    "demand": "Variable",
+    "note": "Requires suitable temperatures, seed quality and a buyer/storage plan.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Cotton",
+    "category": "Commercial Fiber",
+    "season": [
+      "Kharif"
+    ],
+    "soil": [
+      "Black soil",
+      "Loamy",
+      "Clay loam",
+      "Unknown"
+    ],
+    "water": "Moderate",
+    "ph_min": 6.5,
+    "ph_max": 8.0,
+    "days": 170,
+    "cost_acre": 24000,
+    "cost_breakdown": {
+      "seeds": 3200,
+      "fertilizer": 6200,
+      "irrigation_power": 2600,
+      "labour_transplant_harvest": 8500,
+      "crop_protection": 3500
+    },
+    "yield_q_acre": 5.0,
+    "price_q": 7000,
+    "demand": "Variable",
+    "note": "Longer-duration crop with pest and input-cost risks; suitability must be checked.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Sugarcane",
+    "category": "Cash Crop",
+    "season": [
+      "Kharif",
+      "Rabi",
+      "Summer"
+    ],
+    "soil": [
+      "Black soil",
+      "Loamy",
+      "Clay loam",
+      "Unknown"
+    ],
+    "water": "High",
+    "ph_min": 6.5,
+    "ph_max": 8.0,
+    "days": 300,
+    "cost_acre": 65000,
+    "cost_breakdown": {
+      "seeds": 12000,
+      "fertilizer": 16000,
+      "irrigation_power": 14000,
+      "labour_transplant_harvest": 18000,
+      "crop_protection": 5000
+    },
+    "yield_q_acre": 350.0,
+    "price_q": 350,
+    "demand": "Depends on mill/buyer access",
+    "note": "Long-duration, water-intensive crop; check water sustainability, planting window and mill access.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  },
+  {
+    "name": "Leafy vegetables (mixed)",
+    "category": "Vegetable / Perishable",
+    "season": [
+      "Kharif",
+      "Rabi",
+      "Summer"
+    ],
+    "soil": [
+      "Sandy loam",
+      "Loamy",
+      "Unknown"
+    ],
+    "water": "Moderate",
+    "ph_min": 6.0,
+    "ph_max": 7.2,
+    "days": 45,
+    "cost_acre": 18000,
+    "cost_breakdown": {
+      "seeds": 2500,
+      "fertilizer": 4200,
+      "irrigation_power": 2800,
+      "labour_transplant_harvest": 6500,
+      "crop_protection": 2000
+    },
+    "yield_q_acre": 35.0,
+    "price_q": 1800,
+    "demand": "Local demand dependent",
+    "note": "Short-cycle option when nearby buyers and frequent harvesting/transport are available.",
+    "evidence_status": "district-level-reference",
+    "evidence_source": "NABARD Pune District Potential Linked Credit Plan (PLP) 2022-23; scale-of-finance table for FY 2021-22",
+    "evidence_scope": "Pune district; not village-specific proof of cultivation in Chharoli Budruk",
+    "numeric_values_status": "illustrative-demo-values-not-verified-current-data"
+  }
+]
